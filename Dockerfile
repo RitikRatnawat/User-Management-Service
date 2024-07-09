@@ -1,10 +1,10 @@
 FROM openjdk:8
 
-RUN mkdir -p /var/identity-authorization
+RUN mkdir -p /var/user-management
 
-RUN chmod -R 777 /var/identity-authorization
+RUN chmod -R 777 /var/user-management
 
-WORKDIR /var/identity-authorization
+WORKDIR /var/user-management
 
 COPY ./target/authorization-0.0.1-SNAPSHOT.jar app.jar
 

@@ -1,14 +1,14 @@
 version: "2"
 services:
   app:
-    container_name: identity-authorization
+    container_name: user-management-service
     restart: always
     build:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - ~/Desktop/CODING/Docker/volumes/identity-authorization/uploads:/var/identity-authorization/uploads
-      - ~/Desktop/CODING/Docker/volumes/identity-authorization/logs:/var/identity-authorization/logs
+      - ./volumes/user-management/uploads:/var/user-management/uploads
+      - ./volumes/user-management/logs:/var/user-management/logs
     ports:
       - "8403:8403"
     links:
@@ -22,23 +22,23 @@ services:
     networks:
       - identitynetwork
   mongodb:
-    container_name: identity-authorization-mongo
+    container_name: user-management-mongo
     image: mongo
     volumes:
-      - ~/Desktop/CODING/Docker/volumes/identity-authorization/mongo:/data/db
+      - ./volumes/user-management/mongo:/data/db
     ports:
       - "27000:27017"
     environment:
-      - MONGO_INITDB_ROOT_USERNAME=zegeek
-      - MONGO_INITDB_ROOT_PASSWORD=supratecgeek
-      - MONGO_INITDB_DATABASE=admin
+      - MONGO_INITDB_ROOT_USERNAME=admin
+      - MONGO_INITDB_ROOT_PASSWORD=admin123
+      - MONGO_INITDB_DATABASE=users
     networks:
       - identitynetwork
   redisdb:
-    container_name: identity-authorization-redis
+    container_name: user-management-redis
     image: redis
     volumes:
-      - ~/Desktop/CODING/Docker/volumes/identity-authorization/redis:/data/db
+      - ./volumes/user-management/redis:/data/db
     ports:
       - "6500:6379"
     networks:
