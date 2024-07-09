@@ -1,6 +1,6 @@
-package com.tericcabrel.authorization.models.dtos;
+package com.rp.authorization.models.dtos;
 
-import com.tericcabrel.authorization.models.entities.Permission;
+import com.rp.authorization.models.entities.Permission;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

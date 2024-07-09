@@ -1,6 +1,6 @@
-package com.tericcabrel.authorization.models.dtos;
+package com.rp.authorization.models.dtos;
 
-import com.tericcabrel.authorization.models.entities.Role;
+import com.rp.authorization.models.entities.Role;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 

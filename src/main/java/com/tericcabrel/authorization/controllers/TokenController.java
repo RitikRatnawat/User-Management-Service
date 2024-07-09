@@ -1,6 +1,6 @@
-package com.tericcabrel.authorization.controllers;
+package com.rp.authorization.controllers;
 
-import com.tericcabrel.authorization.exceptions.ResourceNotFoundException;
+import com.rp.authorization.exceptions.ResourceNotFoundException;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
@@ -19,16 +19,16 @@ import java.util.HashMap;
 import io.jsonwebtoken.ExpiredJwtException;
 import io.jsonwebtoken.SignatureException;
 
-import static com.tericcabrel.authorization.utils.Constants.*;
+import static com.rp.authorization.utils.Constants.*;
 
-import com.tericcabrel.authorization.models.response.*;
-import com.tericcabrel.authorization.models.dtos.RefreshTokenDto;
-import com.tericcabrel.authorization.models.dtos.ValidateTokenDto;
-import com.tericcabrel.authorization.models.entities.User;
-import com.tericcabrel.authorization.models.entities.RefreshToken;
-import com.tericcabrel.authorization.repositories.RefreshTokenRepository;
-import com.tericcabrel.authorization.services.interfaces.UserService;
-import com.tericcabrel.authorization.utils.JwtTokenUtil;
+import com.rp.authorization.models.response.*;
+import com.rp.authorization.models.dtos.RefreshTokenDto;
+import com.rp.authorization.models.dtos.ValidateTokenDto;
+import com.rp.authorization.models.entities.User;
+import com.rp.authorization.models.entities.RefreshToken;
+import com.rp.authorization.repositories.RefreshTokenRepository;
+import com.rp.authorization.services.interfaces.UserService;
+import com.rp.authorization.utils.JwtTokenUtil;
 
 
 @Api(tags = SWG_TOKEN_TAG_NAME, description = SWG_TOKEN_TAG_DESCRIPTION)

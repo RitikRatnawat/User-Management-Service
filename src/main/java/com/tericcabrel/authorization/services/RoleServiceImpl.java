@@ -1,9 +1,9 @@
-package com.tericcabrel.authorization.services;
+package com.rp.authorization.services;
 
-import static com.tericcabrel.authorization.utils.Constants.ROLE_NOT_FOUND_MESSAGE;
+import static com.rp.authorization.utils.Constants.ROLE_NOT_FOUND_MESSAGE;
 
-import com.tericcabrel.authorization.exceptions.ResourceNotFoundException;
-import com.tericcabrel.authorization.services.interfaces.RoleService;
+import com.rp.authorization.exceptions.ResourceNotFoundException;
+import com.rp.authorization.services.interfaces.RoleService;
 import org.bson.types.ObjectId;
 import org.springframework.stereotype.Service;
 
@@ -11,9 +11,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-import com.tericcabrel.authorization.models.dtos.CreateRoleDto;
-import com.tericcabrel.authorization.models.entities.Role;
-import com.tericcabrel.authorization.repositories.RoleRepository;
+import com.rp.authorization.models.dtos.CreateRoleDto;
+import com.rp.authorization.models.entities.Role;
+import com.rp.authorization.repositories.RoleRepository;
 
 @Service(value = "roleService")
 public class RoleServiceImpl implements RoleService {

@@ -1,8 +1,8 @@
-package com.tericcabrel.authorization.events;
+package com.rp.authorization.events;
 
 import org.springframework.context.ApplicationEvent;
 
-import com.tericcabrel.authorization.models.entities.User;
+import com.rp.authorization.models.entities.User;
 
 public class OnRegistrationCompleteEvent extends ApplicationEvent {
     private User user;

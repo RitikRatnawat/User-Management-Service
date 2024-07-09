@@ -1,4 +1,4 @@
-package com.tericcabrel.authorization.exceptions;
+package com.rp.authorization.exceptions;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

@@ -1,7 +1,7 @@
-package com.tericcabrel.authorization.constraints.validators;
+package com.rp.authorization.constraints.validators;
 
-import com.tericcabrel.authorization.constraints.Exists;
-import com.tericcabrel.authorization.utils.Helpers;
+import com.rp.authorization.constraints.Exists;
+import com.rp.authorization.utils.Helpers;
 import org.apache.commons.beanutils.BeanUtils;
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Component;
@@ -31,7 +31,7 @@ public class ExistsValidator implements ConstraintValidator <Exists, Object> {
     @Override
     public boolean isValid(final Object value, final ConstraintValidatorContext context) {
         Object result;
-        String finalRepositoryName = "com.tericcabrel.authorization.repositories." + repositoryName;
+        String finalRepositoryName = "com.rp.authorization.repositories." + repositoryName;
 
         try {
             Class<?> type = Class.forName(finalRepositoryName);

@@ -1,4 +1,4 @@
-package com.tericcabrel.authorization.models.entities;
+package com.rp.authorization.models.entities;
 
 import lombok.Getter;
 import lombok.Setter;

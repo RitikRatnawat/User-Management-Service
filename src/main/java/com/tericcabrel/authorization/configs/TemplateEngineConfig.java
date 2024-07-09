@@ -1,4 +1,4 @@
-package com.tericcabrel.authorization.configs;
+package com.rp.authorization.configs;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

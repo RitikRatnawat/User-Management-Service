@@ -1,9 +1,9 @@
-package com.tericcabrel.authorization.models.dtos;
+package com.rp.authorization.models.dtos;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 
-import com.tericcabrel.authorization.constraints.FieldMatch;
+import com.rp.authorization.constraints.FieldMatch;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Getter;

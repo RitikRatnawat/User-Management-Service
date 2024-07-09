@@ -1,6 +1,6 @@
-package com.tericcabrel.authorization.models.response;
+package com.rp.authorization.models.response;
 
-import com.tericcabrel.authorization.models.entities.Role;
+import com.rp.authorization.models.entities.Role;
 
 import java.util.List;
 import lombok.AllArgsConstructor;

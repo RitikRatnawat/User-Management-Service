@@ -1,7 +1,7 @@
-package com.tericcabrel.authorization.controllers;
+package com.rp.authorization.controllers;
 
-import com.tericcabrel.authorization.exceptions.ResourceNotFoundException;
-import com.tericcabrel.authorization.models.entities.Role;
+import com.rp.authorization.exceptions.ResourceNotFoundException;
+import com.rp.authorization.models.entities.Role;
 import io.swagger.annotations.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,22 +16,22 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.util.*;
 
-import static com.tericcabrel.authorization.utils.Constants.*;
+import static com.rp.authorization.utils.Constants.*;
 
-import com.tericcabrel.authorization.models.dtos.LoginUserDto;
-import com.tericcabrel.authorization.models.dtos.CreateUserDto;
-import com.tericcabrel.authorization.models.dtos.ValidateTokenDto;
-import com.tericcabrel.authorization.models.response.*;
-import com.tericcabrel.authorization.models.entities.UserAccount;
-import com.tericcabrel.authorization.models.entities.User;
-import com.tericcabrel.authorization.models.entities.RefreshToken;
-import com.tericcabrel.authorization.repositories.RefreshTokenRepository;
-import com.tericcabrel.authorization.services.interfaces.RoleService;
-import com.tericcabrel.authorization.services.interfaces.UserService;
-import com.tericcabrel.authorization.services.interfaces.UserAccountService;
-import com.tericcabrel.authorization.utils.JwtTokenUtil;
-import com.tericcabrel.authorization.utils.Helpers;
-import com.tericcabrel.authorization.events.OnRegistrationCompleteEvent;
+import com.rp.authorization.models.dtos.LoginUserDto;
+import com.rp.authorization.models.dtos.CreateUserDto;
+import com.rp.authorization.models.dtos.ValidateTokenDto;
+import com.rp.authorization.models.response.*;
+import com.rp.authorization.models.entities.UserAccount;
+import com.rp.authorization.models.entities.User;
+import com.rp.authorization.models.entities.RefreshToken;
+import com.rp.authorization.repositories.RefreshTokenRepository;
+import com.rp.authorization.services.interfaces.RoleService;
+import com.rp.authorization.services.interfaces.UserService;
+import com.rp.authorization.services.interfaces.UserAccountService;
+import com.rp.authorization.utils.JwtTokenUtil;
+import com.rp.authorization.utils.Helpers;
+import com.rp.authorization.events.OnRegistrationCompleteEvent;
 
 
 @Api(tags = SWG_AUTH_TAG_NAME, description = SWG_AUTH_TAG_DESCRIPTION)

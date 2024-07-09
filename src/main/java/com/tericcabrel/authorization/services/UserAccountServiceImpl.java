@@ -1,18 +1,18 @@
-package com.tericcabrel.authorization.services;
+package com.rp.authorization.services;
 
-import static com.tericcabrel.authorization.utils.Constants.INVALID_TOKEN_MESSAGE;
-import static com.tericcabrel.authorization.utils.Constants.RESOURCE_NOT_FOUND_MESSAGE;
+import static com.rp.authorization.utils.Constants.INVALID_TOKEN_MESSAGE;
+import static com.rp.authorization.utils.Constants.RESOURCE_NOT_FOUND_MESSAGE;
 
-import com.tericcabrel.authorization.exceptions.ResourceNotFoundException;
-import com.tericcabrel.authorization.services.interfaces.UserAccountService;
+import com.rp.authorization.exceptions.ResourceNotFoundException;
+import com.rp.authorization.services.interfaces.UserAccountService;
 import org.bson.types.ObjectId;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
 
-import com.tericcabrel.authorization.models.entities.UserAccount;
-import com.tericcabrel.authorization.models.entities.User;
-import com.tericcabrel.authorization.repositories.UserAccountRepository;
+import com.rp.authorization.models.entities.UserAccount;
+import com.rp.authorization.models.entities.User;
+import com.rp.authorization.repositories.UserAccountRepository;
 
 
 @Service(value = "userAccountService")

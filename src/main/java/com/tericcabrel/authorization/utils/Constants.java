@@ -1,4 +1,4 @@
-package com.tericcabrel.authorization.utils;
+package com.rp.authorization.utils;
 
 public class Constants {
     static final long TOKEN_LIFETIME_SECONDS = 24 * 60 * 60;

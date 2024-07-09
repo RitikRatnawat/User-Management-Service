@@ -1,4 +1,4 @@
-package com.tericcabrel.authorization.configs;
+package com.rp.authorization.configs;
 
 import org.springframework.boot.autoconfigure.data.redis.RedisProperties;
 import org.springframework.context.annotation.Bean;
@@ -10,7 +10,7 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.repository.configuration.EnableRedisRepositories;
 
 @Configuration
-@EnableRedisRepositories(value = "com.tericcabrel.authorization.repositories")
+@EnableRedisRepositories(value = "com.rp.authorization.repositories")
 public class RedisConfiguration {
     @Bean
     public LettuceConnectionFactory redisConnectionFactory() {

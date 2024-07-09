@@ -1,14 +1,14 @@
-package com.tericcabrel.authorization.services;
+package com.rp.authorization.services;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import com.tericcabrel.authorization.models.dtos.PermissionLoadDto;
-import com.tericcabrel.authorization.models.entities.Permission;
-import com.tericcabrel.authorization.models.entities.Role;
-import com.tericcabrel.authorization.models.enums.PermissionLoadMode;
-import com.tericcabrel.authorization.repositories.PermissionRepository;
-import com.tericcabrel.authorization.repositories.RoleRepository;
-import com.tericcabrel.authorization.services.interfaces.PermissionLoader;
+import com.rp.authorization.models.dtos.PermissionLoadDto;
+import com.rp.authorization.models.entities.Permission;
+import com.rp.authorization.models.entities.Role;
+import com.rp.authorization.models.enums.PermissionLoadMode;
+import com.rp.authorization.repositories.PermissionRepository;
+import com.rp.authorization.repositories.RoleRepository;
+import com.rp.authorization.services.interfaces.PermissionLoader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.lang.reflect.Type;

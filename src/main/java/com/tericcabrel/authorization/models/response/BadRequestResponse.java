@@ -1,4 +1,4 @@
-package com.tericcabrel.authorization.models.response;
+package com.rp.authorization.models.response;
 
 import java.util.Map;
 import lombok.AllArgsConstructor;

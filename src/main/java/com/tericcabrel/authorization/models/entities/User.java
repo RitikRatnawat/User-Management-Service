@@ -1,4 +1,4 @@
-package com.tericcabrel.authorization.models.entities;
+package com.rp.authorization.models.entities;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;

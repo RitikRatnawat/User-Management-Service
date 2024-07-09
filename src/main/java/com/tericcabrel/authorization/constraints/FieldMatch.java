@@ -1,6 +1,6 @@
-package com.tericcabrel.authorization.constraints;
+package com.rp.authorization.constraints;
 
-import com.tericcabrel.authorization.constraints.validators.FieldMatchValidator;
+import com.rp.authorization.constraints.validators.FieldMatchValidator;
 
 import javax.validation.Constraint;
 import javax.validation.Payload;

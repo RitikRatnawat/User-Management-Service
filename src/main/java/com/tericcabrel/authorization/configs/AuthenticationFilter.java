@@ -1,4 +1,4 @@
-package com.tericcabrel.authorization.configs;
+package com.rp.authorization.configs;
 
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -16,8 +16,8 @@ import java.io.IOException;
 import io.jsonwebtoken.ExpiredJwtException;
 import io.jsonwebtoken.SignatureException;
 
-import static com.tericcabrel.authorization.utils.Constants.*;
-import com.tericcabrel.authorization.utils.JwtTokenUtil;
+import static com.rp.authorization.utils.Constants.*;
+import com.rp.authorization.utils.JwtTokenUtil;
 
 public class AuthenticationFilter extends OncePerRequestFilter {
     private final UserDetailsService userDetailsService;

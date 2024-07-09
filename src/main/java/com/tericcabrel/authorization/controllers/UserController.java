@@ -1,9 +1,9 @@
-package com.tericcabrel.authorization.controllers;
+package com.rp.authorization.controllers;
 
-import com.tericcabrel.authorization.exceptions.ResourceNotFoundException;
-import com.tericcabrel.authorization.models.dtos.UpdateUserPermissionDto;
-import com.tericcabrel.authorization.models.entities.Permission;
-import com.tericcabrel.authorization.services.interfaces.PermissionService;
+import com.rp.authorization.exceptions.ResourceNotFoundException;
+import com.rp.authorization.models.dtos.UpdateUserPermissionDto;
+import com.rp.authorization.models.entities.Permission;
+import com.rp.authorization.services.interfaces.PermissionService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
@@ -29,15 +29,15 @@ import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 import java.io.IOException;
 
-import static com.tericcabrel.authorization.utils.Constants.*;
+import static com.rp.authorization.utils.Constants.*;
 
-import com.tericcabrel.authorization.models.response.*;
-import com.tericcabrel.authorization.models.dtos.UpdatePasswordDto;
-import com.tericcabrel.authorization.models.dtos.UpdateUserDto;
-import com.tericcabrel.authorization.models.entities.User;
-import com.tericcabrel.authorization.exceptions.PasswordNotMatchException;
-import com.tericcabrel.authorization.services.FileStorageServiceImpl;
-import com.tericcabrel.authorization.services.interfaces.UserService;
+import com.rp.authorization.models.response.*;
+import com.rp.authorization.models.dtos.UpdatePasswordDto;
+import com.rp.authorization.models.dtos.UpdateUserDto;
+import com.rp.authorization.models.entities.User;
+import com.rp.authorization.exceptions.PasswordNotMatchException;
+import com.rp.authorization.services.FileStorageServiceImpl;
+import com.rp.authorization.services.interfaces.UserService;
 
 
 @Api(tags = SWG_USER_TAG_NAME, description = SWG_USER_TAG_DESCRIPTION)

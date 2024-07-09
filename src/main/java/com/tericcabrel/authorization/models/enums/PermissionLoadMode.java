@@ -1,4 +1,4 @@
-package com.tericcabrel.authorization.models.enums;
+package com.rp.authorization.models.enums;
 
 public enum PermissionLoadMode {
   CREATE("create"),

@@ -1,4 +1,4 @@
-package com.tericcabrel.authorization.configs;
+package com.rp.authorization.configs;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -13,8 +13,8 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
-import com.tericcabrel.authorization.services.UserServiceImpl;
-import com.tericcabrel.authorization.utils.JwtTokenUtil;
+import com.rp.authorization.services.UserServiceImpl;
+import com.rp.authorization.utils.JwtTokenUtil;
 
 @Configuration
 @EnableWebSecurity

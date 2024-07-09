@@ -1,4 +1,4 @@
-package com.tericcabrel.authorization.configs;
+package com.rp.authorization.configs;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -24,7 +24,7 @@ public class SwaggerConfiguration {
     public Docket api(SwaggerProperties swaggerProperties) {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.tericcabrel.authorization.controllers"))
+                .apis(RequestHandlerSelectors.basePackage("com.rp.authorization.controllers"))
                 .paths(PathSelectors.regex("/.*"))
                 .build()
                 .apiInfo(apiEndPointsInfo())
@@ -36,9 +36,9 @@ public class SwaggerConfiguration {
     }
 
     private ApiInfo apiEndPointsInfo() {
-        return new ApiInfoBuilder().title("Identity authorization service")
+        return new ApiInfoBuilder().title("User Management Service")
                 .description("REST API to manage user's registration and authentication, role management and token generation and validation")
-                .contact(new Contact("Eric Cabrel TIOGO", "http://tericcabrel.com", "tericcabrel@gmail.com"))
+                .contact(new Contact("Ritik Ratnawat", "https://github.com/RitikRatnawat", "ritikratnawat786@gmail.com"))
                 .license("Apache 2.0")
                 .licenseUrl("http://www.apache.org/licenses/LICENSE-2.0.html")
                 .version("1.0")

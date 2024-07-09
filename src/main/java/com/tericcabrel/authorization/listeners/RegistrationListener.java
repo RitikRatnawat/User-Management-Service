@@ -1,4 +1,4 @@
-package com.tericcabrel.authorization.listeners;
+package com.rp.authorization.listeners;
 
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.i18n.LocaleContextHolder;
@@ -18,9 +18,9 @@ import javax.mail.MessagingException;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
-import com.tericcabrel.authorization.models.entities.User;
-import com.tericcabrel.authorization.services.interfaces.UserAccountService;
-import com.tericcabrel.authorization.events.OnRegistrationCompleteEvent;
+import com.rp.authorization.models.entities.User;
+import com.rp.authorization.services.interfaces.UserAccountService;
+import com.rp.authorization.events.OnRegistrationCompleteEvent;
 
 @Component
 public class RegistrationListener implements ApplicationListener<OnRegistrationCompleteEvent> {

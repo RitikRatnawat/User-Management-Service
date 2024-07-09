@@ -1,8 +1,8 @@
-package com.tericcabrel.authorization.services;
+package com.rp.authorization.services;
 
-import static com.tericcabrel.authorization.utils.Constants.USER_NOT_FOUND_MESSAGE;
+import static com.rp.authorization.utils.Constants.USER_NOT_FOUND_MESSAGE;
 
-import com.tericcabrel.authorization.exceptions.ResourceNotFoundException;
+import com.rp.authorization.exceptions.ResourceNotFoundException;
 import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -13,12 +13,12 @@ import org.springframework.stereotype.Service;
 
 import java.util.*;
 
-import com.tericcabrel.authorization.models.dtos.CreateUserDto;
-import com.tericcabrel.authorization.models.dtos.UpdatePasswordDto;
-import com.tericcabrel.authorization.models.dtos.UpdateUserDto;
-import com.tericcabrel.authorization.models.entities.User;
-import com.tericcabrel.authorization.repositories.UserRepository;
-import com.tericcabrel.authorization.services.interfaces.UserService;
+import com.rp.authorization.models.dtos.CreateUserDto;
+import com.rp.authorization.models.dtos.UpdatePasswordDto;
+import com.rp.authorization.models.dtos.UpdateUserDto;
+import com.rp.authorization.models.entities.User;
+import com.rp.authorization.repositories.UserRepository;
+import com.rp.authorization.services.interfaces.UserService;
 
 
 @Service

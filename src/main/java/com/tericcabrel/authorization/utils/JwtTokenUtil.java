@@ -1,4 +1,4 @@
-package com.tericcabrel.authorization.utils;
+package com.rp.authorization.utils;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -12,9 +12,9 @@ import java.util.function.Function;
 
 import io.jsonwebtoken.*;
 
-import static com.tericcabrel.authorization.utils.Constants.*;
+import static com.rp.authorization.utils.Constants.*;
 
-import com.tericcabrel.authorization.models.entities.User;
+import com.rp.authorization.models.entities.User;
 
 @Component
 public class JwtTokenUtil implements Serializable {

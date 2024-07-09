@@ -1,8 +1,8 @@
-package com.tericcabrel.authorization.services.interfaces;
+package com.rp.authorization.services.interfaces;
 
-import com.tericcabrel.authorization.exceptions.ResourceNotFoundException;
-import com.tericcabrel.authorization.models.dtos.CreateRoleDto;
-import com.tericcabrel.authorization.models.entities.Role;
+import com.rp.authorization.exceptions.ResourceNotFoundException;
+import com.rp.authorization.models.dtos.CreateRoleDto;
+import com.rp.authorization.models.entities.Role;
 
 import java.util.List;
 

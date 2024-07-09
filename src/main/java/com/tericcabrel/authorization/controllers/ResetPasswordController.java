@@ -1,10 +1,10 @@
-package com.tericcabrel.authorization.controllers;
+package com.rp.authorization.controllers;
 
-import com.tericcabrel.authorization.exceptions.ResourceNotFoundException;
-import com.tericcabrel.authorization.models.entities.UserAccount;
-import com.tericcabrel.authorization.models.response.BadRequestResponse;
-import com.tericcabrel.authorization.models.response.SuccessResponse;
-import com.tericcabrel.authorization.services.interfaces.UserAccountService;
+import com.rp.authorization.exceptions.ResourceNotFoundException;
+import com.rp.authorization.models.entities.UserAccount;
+import com.rp.authorization.models.response.BadRequestResponse;
+import com.rp.authorization.models.response.SuccessResponse;
+import com.rp.authorization.services.interfaces.UserAccountService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
@@ -17,14 +17,14 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.util.HashMap;
 
-import static com.tericcabrel.authorization.utils.Constants.*;
+import static com.rp.authorization.utils.Constants.*;
 
-import com.tericcabrel.authorization.models.dtos.ForgotPasswordDto;
-import com.tericcabrel.authorization.models.dtos.ResetPasswordDto;
-import com.tericcabrel.authorization.models.response.InvalidDataResponse;
-import com.tericcabrel.authorization.models.entities.User;
-import com.tericcabrel.authorization.services.interfaces.UserService;
-import com.tericcabrel.authorization.events.OnResetPasswordEvent;
+import com.rp.authorization.models.dtos.ForgotPasswordDto;
+import com.rp.authorization.models.dtos.ResetPasswordDto;
+import com.rp.authorization.models.response.InvalidDataResponse;
+import com.rp.authorization.models.entities.User;
+import com.rp.authorization.services.interfaces.UserService;
+import com.rp.authorization.events.OnResetPasswordEvent;
 
 
 @Api(tags = SWG_RESPWD_TAG_NAME, description = SWG_RESPWD_TAG_DESCRIPTION)

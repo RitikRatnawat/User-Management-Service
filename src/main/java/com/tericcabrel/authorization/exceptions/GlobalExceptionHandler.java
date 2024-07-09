@@ -1,4 +1,4 @@
-package com.tericcabrel.authorization.exceptions;
+package com.rp.authorization.exceptions;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -13,10 +13,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.tericcabrel.authorization.models.response.BadRequestResponse;
-import com.tericcabrel.authorization.models.response.InvalidDataResponse;
-import com.tericcabrel.authorization.models.response.GenericResponse;
-import com.tericcabrel.authorization.utils.Helpers;
+import com.rp.authorization.models.response.BadRequestResponse;
+import com.rp.authorization.models.response.InvalidDataResponse;
+import com.rp.authorization.models.response.GenericResponse;
+import com.rp.authorization.utils.Helpers;
 
 @ControllerAdvice
 public class GlobalExceptionHandler {

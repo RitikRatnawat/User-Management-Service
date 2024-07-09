@@ -47,7 +47,7 @@
         </rollingPolicy>
     </appender>
 
-    <logger name="com.tericcabrel" level="info">
+    <logger name="com.rp" level="info">
         <appender-ref ref="server-info" />
         <appender-ref ref="server-error" />
     </logger>

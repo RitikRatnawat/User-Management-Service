@@ -8,7 +8,7 @@
 		<version>2.4.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.tericcabrel</groupId>
+	<groupId>com.rp</groupId>
 	<artifactId>authoz</artifactId>
 	<version>1.1.0-SNAPSHOT</version>
 	<name>authoz</name>

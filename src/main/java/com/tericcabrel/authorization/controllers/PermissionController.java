@@ -1,4 +1,4 @@
-package com.tericcabrel.authorization.controllers;
+package com.rp.authorization.controllers;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -13,24 +13,24 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import static com.tericcabrel.authorization.utils.Constants.FORBIDDEN_MESSAGE;
-import static com.tericcabrel.authorization.utils.Constants.PERMISSION_NOT_FOUND_MESSAGE;
-import static com.tericcabrel.authorization.utils.Constants.SWG_PERMISSION_ITEM_MESSAGE;
-import static com.tericcabrel.authorization.utils.Constants.SWG_PERMISSION_ITEM_OPERATION;
-import static com.tericcabrel.authorization.utils.Constants.SWG_PERMISSION_LIST_MESSAGE;
-import static com.tericcabrel.authorization.utils.Constants.SWG_PERMISSION_LIST_OPERATION;
-import static com.tericcabrel.authorization.utils.Constants.SWG_PERMISSION_TAG_DESCRIPTION;
-import static com.tericcabrel.authorization.utils.Constants.SWG_PERMISSION_TAG_NAME;
-import static com.tericcabrel.authorization.utils.Constants.UNAUTHORIZED_MESSAGE;
-import com.tericcabrel.authorization.exceptions.ResourceNotFoundException;
-import com.tericcabrel.authorization.models.entities.Permission;
-import com.tericcabrel.authorization.models.response.BadRequestResponse;
-import com.tericcabrel.authorization.models.response.PermissionListResponse;
-import com.tericcabrel.authorization.models.response.PermissionResponse;
-import com.tericcabrel.authorization.models.response.RoleListResponse;
-import com.tericcabrel.authorization.models.response.RoleResponse;
-import com.tericcabrel.authorization.models.response.SuccessResponse;
-import com.tericcabrel.authorization.services.interfaces.PermissionService;
+import static com.rp.authorization.utils.Constants.FORBIDDEN_MESSAGE;
+import static com.rp.authorization.utils.Constants.PERMISSION_NOT_FOUND_MESSAGE;
+import static com.rp.authorization.utils.Constants.SWG_PERMISSION_ITEM_MESSAGE;
+import static com.rp.authorization.utils.Constants.SWG_PERMISSION_ITEM_OPERATION;
+import static com.rp.authorization.utils.Constants.SWG_PERMISSION_LIST_MESSAGE;
+import static com.rp.authorization.utils.Constants.SWG_PERMISSION_LIST_OPERATION;
+import static com.rp.authorization.utils.Constants.SWG_PERMISSION_TAG_DESCRIPTION;
+import static com.rp.authorization.utils.Constants.SWG_PERMISSION_TAG_NAME;
+import static com.rp.authorization.utils.Constants.UNAUTHORIZED_MESSAGE;
+import com.rp.authorization.exceptions.ResourceNotFoundException;
+import com.rp.authorization.models.entities.Permission;
+import com.rp.authorization.models.response.BadRequestResponse;
+import com.rp.authorization.models.response.PermissionListResponse;
+import com.rp.authorization.models.response.PermissionResponse;
+import com.rp.authorization.models.response.RoleListResponse;
+import com.rp.authorization.models.response.RoleResponse;
+import com.rp.authorization.models.response.SuccessResponse;
+import com.rp.authorization.services.interfaces.PermissionService;
 
 @Api(tags = SWG_PERMISSION_TAG_NAME, description = SWG_PERMISSION_TAG_DESCRIPTION)
 @CrossOrigin(origins = "*", maxAge = 3600)

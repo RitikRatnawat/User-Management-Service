@@ -1,4 +1,4 @@
-package com.tericcabrel.authorization.utils;
+package com.rp.authorization.utils;
 
 import java.util.ArrayList;
 import java.util.List;

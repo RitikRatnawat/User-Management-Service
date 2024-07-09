@@ -1,4 +1,4 @@
-package com.tericcabrel.authorization.models.dtos;
+package com.rp.authorization.models.dtos;
 
 import javax.validation.constraints.*;
 import io.swagger.annotations.ApiModel;
@@ -7,10 +7,10 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.Accessors;
 
-import com.tericcabrel.authorization.constraints.IsUnique;
-import com.tericcabrel.authorization.constraints.FieldMatch;
-import com.tericcabrel.authorization.models.entities.Role;
-import com.tericcabrel.authorization.models.entities.Coordinates;
+import com.rp.authorization.constraints.IsUnique;
+import com.rp.authorization.constraints.FieldMatch;
+import com.rp.authorization.models.entities.Role;
+import com.rp.authorization.models.entities.Coordinates;
 
 
 @ApiModel(value = "RegisterParam", description = "Parameters required to create or update user")

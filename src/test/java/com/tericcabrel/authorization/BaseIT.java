@@ -1,4 +1,4 @@
-package com.tericcabrel.authorization;
+package com.rp.authorization;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.springframework.beans.factory.annotation.Autowired;

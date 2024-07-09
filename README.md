@@ -1,4 +1,4 @@
-## Identity Authorization Service
+## User Management Service
 A REST API for User and Role management, token generation and validation
 
 ## Contents
@@ -30,7 +30,7 @@ This features are available in this service
 ## Installation
 - Clone the repository
 ```bash
-$ git clone https://github.com/tericcabrel/identity-authorization.git [project_name]
+$ git clone https://github.com/RitikRatnawat/User-Management-Service.git [project_name]
 ```
 
 - Install dependencies
@@ -51,7 +51,7 @@ $ mvn spring-boot:run
 Note: An IDE like **IntelliJ** can perform these tasks for you automatically
 
 ## Data Seed
-Inside the package **com.tericcabrel.authorization.bootstrap**, the file named _DataSeeder.java_ 
+Inside the package **com.rp.authorization.bootstrap**, the file named _DataSeeder.java_ 
 is responsible for loading data on application startup.
 It's there the creation of default roles **(ROLE_ADMIN, ROLE_USER)**, 
 and the Super Admin (the first user with the role: ROLE_ADMIN) are performed

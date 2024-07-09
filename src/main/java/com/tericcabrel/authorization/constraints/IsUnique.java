@@ -1,7 +1,7 @@
-package com.tericcabrel.authorization.constraints;
+package com.rp.authorization.constraints;
 
-import com.tericcabrel.authorization.constraints.validators.IsUniqueValidator;
-import com.tericcabrel.authorization.constraints.validators.IsUniqueValidator.UpdateAction;
+import com.rp.authorization.constraints.validators.IsUniqueValidator;
+import com.rp.authorization.constraints.validators.IsUniqueValidator.UpdateAction;
 
 import javax.validation.Constraint;
 import javax.validation.Payload;

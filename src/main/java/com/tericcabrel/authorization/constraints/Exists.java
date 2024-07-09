@@ -1,6 +1,6 @@
-package com.tericcabrel.authorization.constraints;
+package com.rp.authorization.constraints;
 
-import com.tericcabrel.authorization.constraints.validators.ExistsValidator;
+import com.rp.authorization.constraints.validators.ExistsValidator;
 
 import javax.validation.Constraint;
 import javax.validation.Payload;

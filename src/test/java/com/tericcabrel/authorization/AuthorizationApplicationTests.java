@@ -1,9 +1,9 @@
-package com.tericcabrel.authorization;
+package com.rp.authorization;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-import com.tericcabrel.authorization.models.entities.Role;
-import com.tericcabrel.authorization.repositories.RoleRepository;
+import com.rp.authorization.models.entities.Role;
+import com.rp.authorization.repositories.RoleRepository;
 import java.util.List;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;

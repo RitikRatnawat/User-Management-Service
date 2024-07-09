@@ -1,6 +1,6 @@
-package com.tericcabrel.authorization.controllers;
+package com.rp.authorization.controllers;
 
-import com.tericcabrel.authorization.exceptions.ResourceNotFoundException;
+import com.rp.authorization.exceptions.ResourceNotFoundException;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
@@ -13,15 +13,15 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 import java.util.Arrays;
 
-import static com.tericcabrel.authorization.utils.Constants.*;
+import static com.rp.authorization.utils.Constants.*;
 
-import com.tericcabrel.authorization.models.response.*;
-import com.tericcabrel.authorization.models.dtos.CreateRoleDto;
-import com.tericcabrel.authorization.models.entities.Role;
-import com.tericcabrel.authorization.services.interfaces.RoleService;
-import com.tericcabrel.authorization.models.dtos.UpdateRolePermissionDto;
-import com.tericcabrel.authorization.models.entities.Permission;
-import com.tericcabrel.authorization.services.interfaces.PermissionService;
+import com.rp.authorization.models.response.*;
+import com.rp.authorization.models.dtos.CreateRoleDto;
+import com.rp.authorization.models.entities.Role;
+import com.rp.authorization.services.interfaces.RoleService;
+import com.rp.authorization.models.dtos.UpdateRolePermissionDto;
+import com.rp.authorization.models.entities.Permission;
+import com.rp.authorization.services.interfaces.PermissionService;
 
 @Api(tags = SWG_ROLE_TAG_NAME, description = SWG_ROLE_TAG_DESCRIPTION)
 @CrossOrigin(origins = "*", maxAge = 3600)

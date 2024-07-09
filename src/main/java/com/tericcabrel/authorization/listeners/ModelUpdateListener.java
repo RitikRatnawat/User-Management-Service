@@ -1,4 +1,4 @@
-package com.tericcabrel.authorization.listeners;
+package com.rp.authorization.listeners;
 
 import org.springframework.data.mongodb.core.mapping.event.AbstractMongoEventListener;
 import org.springframework.data.mongodb.core.mapping.event.BeforeConvertEvent;
@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.Date;
 
-import com.tericcabrel.authorization.models.entities.BaseModel;
+import com.rp.authorization.models.entities.BaseModel;
 
 @Component
 public class ModelUpdateListener extends AbstractMongoEventListener<BaseModel> {

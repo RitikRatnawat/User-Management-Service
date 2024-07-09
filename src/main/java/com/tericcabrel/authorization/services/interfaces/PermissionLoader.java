@@ -1,4 +1,4 @@
-package com.tericcabrel.authorization.services.interfaces;
+package com.rp.authorization.services.interfaces;
 
 public interface PermissionLoader {
   void load();

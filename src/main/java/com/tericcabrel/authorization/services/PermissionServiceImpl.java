@@ -1,8 +1,8 @@
-package com.tericcabrel.authorization.services;
+package com.rp.authorization.services;
 
-import com.tericcabrel.authorization.models.entities.Permission;
-import com.tericcabrel.authorization.repositories.PermissionRepository;
-import com.tericcabrel.authorization.services.interfaces.PermissionService;
+import com.rp.authorization.models.entities.Permission;
+import com.rp.authorization.repositories.PermissionRepository;
+import com.rp.authorization.services.interfaces.PermissionService;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
